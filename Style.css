@@ -1,0 +1,444 @@
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+@media screen and (max-width: 400px) {
+	
+}
+
+#offer-title{
+	color:#F2BE1A;
+}
+
+
+
+.review-content{
+	border-style:3px solid black;
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+	img { 
+		max-width: 85%;
+		min-width: 60%;
+		margin-left: 10%;
+		margin-right: 10%;
+		height: auto;
+		}
+		
+	
+	/*
+	.grid{
+		display: flex;
+		
+	}
+	.smallGrid{
+		box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+		background-color:rgb(128,128,128);
+		
+	}
+	
+	.ProductImage{
+		width: 66%;
+		max-width:100%;
+		padding-bottom: 1em;
+		border:1px solid white;
+	}
+	*/
+}
+
+
+
+@media only screen and (min-width: 800px) {
+.offers-grid{
+		margin-bottom: 3%;
+		margin-top: 3%;
+		margin-right: 15%;
+		margin-left: 15%;
+		box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+		max-width: 100%;
+		min-width: 30%;
+		align-items: center;
+		align-content: stretch;
+	}
+.offers-grid-container{
+		display: inline-grid;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: 2%;
+		margin-right: 2%;
+	}	
+
+.offers-grid-container{
+		justify-items: center;
+		align-items: center;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}
+
+
+.video {
+	max-width: 100%; height: auto; 
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:2% ;
+    margin-bottom:2% ;
+	}
+
+
+
+
+*{
+    font-family: sans-serif;
+}
+
+
+
+header{
+    display:flex;
+    width: 100%;
+    background-color:#BE1622;
+}
+.logo{
+    padding:0.1em;
+    margin: 0.5em;
+}
+.headerText{
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    color: white;
+}
+
+.menu{
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuList{
+    text-align:center;
+    font-size: 1.5em;
+    margin: 1em;
+    list-style-type: none;
+}
+nav{
+    position: absolute;
+    top: 2%;
+    right: 16px;
+}
+.menu a{
+    color:#C7CBDA;
+    text-decoration: none;
+
+}
+
+.menu a:hover{
+    color:#007FB0;
+}
+
+
+
+
+
+
+
+body{
+    margin:0;
+text-align: center;
+}
+.titleMainPage{
+    color:#34516C;
+}
+.Together{
+    color: #F2BE1A;
+
+}
+
+
+
+footer {
+    height: 100%;
+    width: 100%;
+    background: #34516C;
+
+}
+.myFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-left:2em;
+    margin-right:2em;
+    padding-bottom: 2em;
+    text-align: left;
+    color: white;
+}
+#blueColor{
+    color: #007FB0;
+}
+
+
+
+
+
+
+.ProductType{
+    color: #F2BE1A;
+    margin-left: 8px;
+}
+
+.ProductDescription{
+    margin-left: 8px;
+}
+.ProductColor{
+
+}
+.ProductPrice{
+    margin-left: 8px;
+}
+.ButtReadMore{
+    margin-bottom: 1em;
+    color: #0099D2;
+    border: none
+}
+.ButtCart{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.Buttoncart{
+    text-align-last: center;
+}
+
+
+
+
+
+.cartGrid{
+   display: flex;
+   flex-wrap: wrap;
+}
+.CartImage{
+    width: 20%;
+    max-width:100%;
+    padding-bottom: 1em;
+    border:1px solid white;
+}
+.CartType{
+    color: #F2BE1A;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+	.grid{
+		margin-bottom: 3%;
+		margin-top: 3%;
+		margin-right: 15%;
+		margin-left: 15%;
+		box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+		max-width: 100%;
+		min-width: 30%;
+		align-items: center;
+		align-content: stretch;
+		flex-direction: row;
+	}
+	.readmore-grid{
+	    display: flex;
+		flex-wrap: nowrap;
+		margin-bottom: 3%;
+		margin-top: 3%;
+		margin-right: 15%;
+		margin-left: 15%;
+		box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+		max-width: 100%;
+		min-width: 30%;
+		align-items: center;
+		align-content: stretch;
+		flex-direction: row;
+	
+	}
+	.grid-container{
+		display: inline-grid;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: 2%;
+		margin-right: 2%;
+	}	
+
+	.grid-container{
+		justify-items: center;
+		align-items: center;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	img { 
+		max-width: 85%;
+		min-width: 60%;
+		margin-left:0%;
+		margin-right:0%;
+		height: auto;
+		}
+	.smallGrid{
+		box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+		background-color:rgb(169,169,169);
+		
+	}
+	.product-title{
+		padding-top:30%;
+		font-family: "Montserrat", sans-serif;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	.product-desc{
+		margin-right: 5%;
+		margin-left: 5%;
+		font-size:160%;
+	}
+		
+}
+@media only screen and (max-width: 400px) {
+	*{font-size:1000px;}
+	img { 
+		max-width: 85%;
+		min-width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		height: auto;
+	}
+	.grid{
+		justify-content: space-evenly;
+		margin-bottom: 1%;
+		margin-top: 1%;
+		margin-right: 1%;
+		margin-left: 1%;
+		box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+		max-width: 100%;
+		min-width: 30%;
+	}
+	.readmore-grid{
+	    display: flex;
+		margin-bottom: 3%;
+		margin-top: 3%;
+		margin-right: 15%;
+		margin-left: 15%;
+		box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+		max-width: 100%;
+		min-width: 30%;
+		align-items: center;
+		align-content: stretch;
+		flex-direction: row;
+	
+	}
+	.grid-container{
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: 2%;
+		margin-right: 2%;
+	}	
+		
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.Productbutton{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.Productbutton:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* searchbar */
+
+#search{
+	border: 3px solid #4CAF50;
+	border-radius:20px;
+}
+#submit{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+
+/* item.php style page */
