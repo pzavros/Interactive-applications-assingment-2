@@ -136,7 +136,7 @@ if (count($errors) == 0) {
 
   	$query = "INSERT INTO tbl_users (user_full_name, user_email, user_pass, user_address) VALUES ('$username', '$email', '$password','$address')";
   	mysqli_query($db, $query);
-  	header('location: RegisterPage.php');
+  	header('location: LoginPage.php');
   }
 }
 

@@ -7,17 +7,51 @@
 </head>
 <body>
 <header>
-    <div class="logo"> <img src="uclan logo.png" width="370" height="110" class="logo"> </div>
-    <p class="headerText">Student Shop</p>
+<div id="secondary">
+    <div class="logo" id="secondary"> <img src="uclan logo.png" width="370" height="110" class="logo"> </div>
+    <p class="headerText" id="secondary">Student Shop</p>
     <nav>
-        <ul class="menu">
-            <li class="menuList"> <a href="index.php" id="home">Home</a> </li>
-            <li class="menuList"> <a href="products.php" id="products">Products</a> </li>
-            <li class="menuList"> <a href="cart.php" id="cart">Cart</a> </li>
-			<li class="menuList"> <a href="LoginPage.php" id="login">Login</a> </li>
-        </ul>
+    <ul class="menu" id="secondary">
+        <li class="menuList" id="secondary"> <a href="index.php" id="home">Home</a> </li>
+        <li class="menuList" id="secondary"> <a href="products.php" id="products">Products</a> </li>
+        <li class="menuList" id="secondary"> <a href="cart.php" id="cart">Cart</a> </li>
+		<li class="menuList" id="secondary"> <a href="LoginPage.php" id="login"><div class="dropdown">
+				<button class="dropbtn">
+				<?php
+		session_start();
+		$conn = mysqli_connect("localhost", "pzavros", "QXeP7MCP", "pzavros");
+		
+		if (mysqli_connect_error())
+		{
+			echo "ERROR: could not connect to database: " . mysqli_connect_error();
+		}
+		if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+			echo "Welcome ".$_SESSION['username'];
+		}
+		else {
+			echo "Log In";
+		}
+		
+		if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+			 echo "</button>
+				<div class='dropdown-content'>
+					<a id='logout' href='LogOut.php'>";
+					echo "Log Out";
+		}
+		else {
+			echo "</button>
+				<div class='dropdown-content'>
+					<a id='logout' href='LoginPage.php' value='Log in'>";
+					echo "Log In";
+		}
+		?>
+					
+					</a>
+					<a href="RegisterPage.php">Register</a>
+				</div>
+			</div></a> </li>
+    </ul>
     </nav>
-
 
 </header>
 <input type="button" value="Clear Cart" onclick="clear_cart()">

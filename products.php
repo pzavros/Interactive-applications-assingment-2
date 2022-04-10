@@ -56,9 +56,28 @@
 
 </header>
 <form action="products.php" method="GET">
-		<input id="search" type="text" placeholder="Type here">
-		<input id="submit" type="submit" value="Search">
+		<input id="search" type="text" placeholder="Type here" name="search">
+		<input id="submit" type="submit" value="Search" name="submit">
 </form>
+<?php
+    if(isset($_GET['submit'])){
+    $text = $_GET["search"];
+    $sql = "SELECT * FROM tbl_products WHERE product_title like '%".$text."%'";
+    $resultsearch = mysqli_query($conn,$sql);
+    while($row = $resultsearch->fetch_assoc()) {
+					echo "<div class='grid'>";
+					echo "<img id='productImage' src='".$row["product_image"]."' width=110px height=110px ><br><div class='smallGrid'>'" . $row["product_title"]. "<br>" . $row["product_desc"];
+					echo "<a class='ButtReadMore' href='item.php?product_id=".$row['product_id']."'>ReadMore...</a>";
+					echo "<br><br><br>";
+					echo "<p class='ProductPrice'>".$row['product_price']."<br><br><br>";
+					echo "<button class='ButtCart'>Buy</button><br><br><br>";
+					echo "</div></div>";
+			}
+    }
+
+?>
+
+
 
 <form method="post">
 		<input type="submit" name="button"
@@ -104,6 +123,7 @@
 					echo "<br><br><br>";
 					echo "<p class='ProductPrice'>".$row['product_price']."<br><br><br>";
 					echo "<button class='ButtCart'onclick=".addToCart($row['product_id']).">Buy</button><br><br><br>";
+					echo "<button class='ButtCart'onclick='cart.php'>Buy</button><br><br><br>";
 					echo "</div></div>";
 			}
         }	
@@ -114,7 +134,7 @@
 					echo "<a class='ButtReadMore' href='item.php?product_id=".$row['product_id']."'>ReadMore...</a>";
 					echo "<br><br><br>";
 					echo "<p class='ProductPrice'>".$row['product_price']."<br><br><br>";
-					echo "<a class='ButtCart' href='cart.php?product_id=".$row['product_id']."' >Buy</a><br><br><br>";
+					echo "<button class='ButtCart'>Buy</button><br><br><br>";
 					echo "</div></div>";
 			}
         }
